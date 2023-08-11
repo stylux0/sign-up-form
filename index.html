@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>sign up form</title>
+</head>
+<body>
+    
+    <main>
+        
+        <div id="img-title">
+            <div id="img-container">
+                <img src="./img/bazar.jpg" alt="bazar" id="background-img">  
+            </div>
+
+            <div id="background-logo"></div>
+            <div id="logo">
+                <img src="./img/logo.webp" alt="logo">
+                <p id="text-logo">La Pulga Americana</p>
+            </div>
+        </div>
+        
+
+        <div id="main-container">
+            <div id="text" class="container-section">    
+                <p>This is not a real online services! You know you need somehitng like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
+                <br>
+                <p>You <em>know</em> you want to. </p>
+            </div>
+            <div id="form" class="container-section">
+                <h2>Let's do this!</h2>
+                <form action="" method="post">
+                    
+                    <div class="line-form">
+                        <div class="input-element">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name" pattern="[A-Z a-z]+">
+                        </div>
+                        <div class="input-element">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name" pattern="[A-Z a-z]+">
+                        </div>
+                    </div>
+                    
+                    <div class="line-form">
+                        <div class="input-element">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        
+                        <div class="input-element">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="text"  inputmode="numeric" name="phone" id="phone" pattern="[0-9]+">
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="line-form">
+                        <div class="input-element">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            >
+                        </div>
+                        
+                        <div class="input-element">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-password" id="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            >
+                        </div>  
+                    </div>
+
+                    
+                </form>
+            </div>
+            <div class="container-section">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </main>
+   
+</html>
